@@ -1,0 +1,64 @@
+
+React is a library for building user interfaces.
+
+React runs on the client as a SPA(Single Page App),
+but can be used to build full stack apps by communicating with a server/API (eg. MERN stack)
+
+React is often referred to as a Front-end "framework" because it is capable 
+and directly comparable to a framework such as Angular or Vue
+
+WHY WOULD YOU USE REACT ? 
+
+- Structure the "view" layer of your application
+- Reusable components with their own state
+- JSX-Dynamic markup
+- Interactive UI's with Virtual DOM
+- Performance & Testing
+- Very popular in the industry
+
+We will mostly check out the Function Components
+
+- Components render/return JSX(Javascript Syntax Extension)
+- Components can also take in "props"
+
+WORKING WITH STATE
+
+- Components can have "state" which is an object that determines how a
+component renders and behaves
+- "App" or "global" state refers to state that is available to the entire UI,
+not just a single component.
+
+Prior to React 16.8, we had to use class based components to use state.
+Now we can use functional components with hooks!
+
+index.js is the entrypoint of the react project.
+
+App is the main root component, so every other component that we create
+will be in/under the App component
+
+You can use empty fragments instead of div so on dev console, you wont see div
+
+-------
+Using proptypes inside to code makes the code robust for warnings and errors
+If it is required then you can use isRequired
+
+
+Header.propTypes = {
+    title: PropTypes.string.isRequired,
+}
+
+-------
+You can direct use css or external packages 
+<h1 style={{color:red, backgroundColor:'black'}}> </h1>
+
+If you don't want to do this directly then;
+
+<h1 style={headingStyle}> </h1>
+
+const headingStyle = {
+    color:red,
+    backgroundColor:'black'
+}
+
+---
+state is immutable, it is not something that you can directly change
